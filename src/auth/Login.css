@@ -1,0 +1,41 @@
+
+.text-container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 300px;
+    transition : margin-top 3s;
+  }
+  
+  
+  .text-container h2{
+    margin: 0;
+    font-size: 150px;
+    color: rgba(225,225,225, .01);
+    background-image: url("./vectorImage.jpg");
+  
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: bganimate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+    @keyframes bganimate {
+      
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
